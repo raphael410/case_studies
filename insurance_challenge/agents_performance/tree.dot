@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="customer_additional_products <= 1.106\nentropy = 0.999\nsamples = 978\nvalue = [796, 748]\nclass = 0", fillcolor="#e581390f"] ;
+1 [label="sum_assured <= 0.5\nentropy = 0.728\nsamples = 352\nvalue = [443, 113]\nclass = 0", fillcolor="#e58139be"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="customer_social_group <= 1504000.0\nentropy = 0.918\nsamples = 69\nvalue = [74, 37]\nclass = 0", fillcolor="#e581397f"] ;
+1 -> 2 ;
+3 [label="entropy = 0.979\nsamples = 50\nvalue = [48, 34]\nclass = 0", fillcolor="#e581394a"] ;
+2 -> 3 ;
+4 [label="entropy = 0.48\nsamples = 19\nvalue = [26, 3]\nclass = 0", fillcolor="#e58139e2"] ;
+2 -> 4 ;
+5 [label="customer_social_group <= 2103000.0\nentropy = 0.66\nsamples = 283\nvalue = [369, 76]\nclass = 0", fillcolor="#e58139ca"] ;
+1 -> 5 ;
+6 [label="entropy = 0.677\nsamples = 274\nvalue = [349, 76]\nclass = 0", fillcolor="#e58139c7"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 9\nvalue = [20, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+5 -> 7 ;
+8 [label="customer_income_median <= 147500.0\nentropy = 0.94\nsamples = 626\nvalue = [353, 635]\nclass = 1", fillcolor="#399de571"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="customer_additional_products <= 2.026\nentropy = 0.912\nsamples = 572\nvalue = [293, 603]\nclass = 1", fillcolor="#399de583"] ;
+8 -> 9 ;
+10 [label="entropy = 0.977\nsamples = 315\nvalue = [212, 304]\nclass = 1", fillcolor="#399de54d"] ;
+9 -> 10 ;
+11 [label="entropy = 0.747\nsamples = 257\nvalue = [81, 299]\nclass = 1", fillcolor="#399de5ba"] ;
+9 -> 11 ;
+12 [label="customer_income <= 848125.0\nentropy = 0.932\nsamples = 54\nvalue = [60, 32]\nclass = 0", fillcolor="#e5813977"] ;
+8 -> 12 ;
+13 [label="entropy = 0.965\nsamples = 49\nvalue = [50, 32]\nclass = 0", fillcolor="#e581395c"] ;
+12 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 5\nvalue = [10, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+12 -> 14 ;
+}
